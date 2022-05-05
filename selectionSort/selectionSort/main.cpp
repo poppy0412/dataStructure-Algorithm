@@ -17,7 +17,7 @@ void selectionSort(T arr[], int n) {
 	}
 }
 
-int main()
+int main() 
 {
 	// 从小到大排序无序数组
 	int N = 1000;
