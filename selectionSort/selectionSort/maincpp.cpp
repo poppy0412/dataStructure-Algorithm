@@ -25,6 +25,6 @@ int main()
 	selectionSort(arr, N);
 	SortTestHelper::printArray(arr, N);
 	delete[] arr;
-	cout << "11" << endl;
+	cout << "22" << endl;
 	return 0;
 }
