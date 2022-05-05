@@ -19,7 +19,7 @@ void selectionSort(T arr[], int n) {
 
 int main()
 {
-	// 测试排序算法辅助函数
+	// 从小到大排序无序数组
 	int N = 1000;
 	int *arr = SortTestHelper::generateRandomArray(N, 0, 100000);
 	selectionSort(arr, N);
