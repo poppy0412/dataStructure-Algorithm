@@ -20,11 +20,11 @@ void selectionSort(T arr[], int n) {
 int main()
 {
 	// ²âÊÔÅÅĞòËã·¨¸¨Öúº¯Êı
-	int N = 100;
+	int N = 1000;
 	int *arr = SortTestHelper::generateRandomArray(N, 0, 100000);
 	selectionSort(arr, N);
 	SortTestHelper::printArray(arr, N);
+	SortTestHelper::testSort("selectionSort", selectionSort, arr, N);
 	delete[] arr;
-	cout << "22" << endl;
 	return 0;
 }
