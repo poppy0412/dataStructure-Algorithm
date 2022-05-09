@@ -3,7 +3,11 @@
 #define SORTTESTHELPER_H
 
 #include <iostream>
+#include <algorithm>
+#include <string>
 #include <ctime>
+#include <cassert>
+#include <string>
 
 using namespace std;
 
@@ -74,7 +78,7 @@ namespace SortTestHelper
 	template<typename T>
 	bool isSorted(T arr[], int n)
 	{
-		for (ont i = 0; i < n-1; i++)
+		for (int i = 0; i < n-1; i++)
 		{
 			if (arr[i] > arr[i + 1])
 			{
