@@ -33,5 +33,8 @@ void insertionSort(T arr[], int n)
 
 int main()
 {
+	int n = 2000;
+
+	// ≤‚ ‘1 “ª∞„≤‚ ‘
 	return 0;
 }
