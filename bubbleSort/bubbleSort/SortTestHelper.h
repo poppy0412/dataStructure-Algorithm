@@ -14,7 +14,7 @@ using namespace std;
 namespace SortTestHelper
 {
 	// 生成有n个元素的随机数组,每个元素的随机范围为[rangeL, rangeR]
-	int * generateRandomArry(int n, int range_l, int range_r)
+	int * generateRandomArray(int n, int range_l, int range_r)
 	{
 		int * arr = new int[n];
 
