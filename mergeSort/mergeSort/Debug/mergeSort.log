@@ -1,2 +1,4 @@
 ﻿  main.cpp
+e:\a学习\回所工作\slam&c++\数据结构\玩转算法与数据结构\案例代码\mergesort\mergesort\sorttesthelper.h(21): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+e:\a学习\回所工作\slam&c++\数据结构\玩转算法与数据结构\案例代码\mergesort\mergesort\sorttesthelper.h(36): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
   mergeSort.vcxproj -> E:\a学习\回所工作\slam&c++\数据结构\玩转算法与数据结构\案例代码\mergeSort\Debug\mergeSort.exe

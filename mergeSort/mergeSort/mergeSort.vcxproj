@@ -79,6 +79,10 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
+      <HeapReserveSize>160000000</HeapReserveSize>
+      <StackReserveSize>160000000</StackReserveSize>
+      <HeapCommitSize>160000000</HeapCommitSize>
+      <StackCommitSize>160000000</StackCommitSize>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -124,6 +128,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="InsertionSort.h" />
+    <ClInclude Include="SortTestHelper.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

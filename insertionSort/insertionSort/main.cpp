@@ -8,7 +8,7 @@ using namespace std;
 template<typename T>
 void insertionSort(T arr[], int n)
 {
-	for (int i = 0; i < n; i++)
+	for (int i = 1; i < n; i++)
 	{
 		// 寻找元素arr[i]合适的插入位置
 		// 写法1
