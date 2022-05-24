@@ -43,13 +43,22 @@ void __merge(T arr[], int l, int mid, int r) {
 template<typename T>
 void __mergeSort(T arr[], int l, int r) {
 
-	if (l >= r)
+	/*if (l >= r)
+		return;*/
+	if (r-l<=15)
+	{
+		insertionSort(arr, l, r);
 		return;
+	}
 
 	int mid = (l + r) / 2;
 	__mergeSort(arr, l, mid);
 	__mergeSort(arr, mid + 1, r);
-	__merge(arr, l, mid, r);
+	if (arr[mid]>arr[mid+1])
+	{
+		__merge(arr, l, mid, r);
+	}
+	
 }
 
 template<typename T>
@@ -87,7 +96,7 @@ int main() {
 	// 对于近乎有序的数组, 数组越有序, InsertionSort的时间性能越趋近于O(n)
 	// 所以可以尝试, 当swapTimes比较大时, MergeSort更快
 	// 但是当swapTimes小到一定程度, InsertionSort变得比MergeSort快
-	/*int swapTimes = 10;
+	int swapTimes = 10;
 	assert(swapTimes >= 0);
 
 	cout << "Test for nearly ordered array, size = " << n << ", swap time = " << swapTimes << endl;
@@ -98,7 +107,7 @@ int main() {
 	SortTestHelper::testSort("Merge Sort", mergeSort, arr2, n);
 
 	delete[] arr1;
-	delete[] arr2;*/
+	delete[] arr2;
 
 	return 0;
 }
